@@ -1,0 +1,40 @@
+/* Estilo para a tabela */
+body{
+    background-color: rgb(0, 0, 15); /* Cor de Fundo */
+}
+
+table { /* Table - Irei adicionar estilos para ests parte*/
+    border-collapse: separate; /* Estilo de borda*/
+    border-spacing: 0; /* Epaçamento da borda */
+    width: 80%; /* Tamanho */
+    margin: 20px auto; /* Margem */
+    font-family: Arial, sans-serif; /* Fonte */
+    border-radius: 10px; /* Deixou as bordas arredondadas */
+    overflow: hidden; /* Esconde cantos que ultrapassem o arredondamento */
+   
+}
+    /* Estilo para cabeçalhos */
+th {
+    background-color: rgb(255, 136, 0);  /* Cor de Fundo */
+    color: aliceblue;  /* Cores das letras */
+    padding: 12px; /* Aumenta a altura da borda*/
+    text-align: left;  /* Deixa o Texto alinhado à esquerda */
+    border: 1px solid #340086;  /* Deixa a borda sutil */
+  
+    
+}
+
+td {
+
+    border: 1px solid #340086; /* Borda sutil */
+    color: aliceblue; /* Cores das letras */
+    padding: 8px; /* Aumenta a altura da borda*/
+    font-family: Arial, sans-serif; /* Fonte */
+}
+
+  /* Efeito ao passar o mouse */
+  tr:hover {
+    background-color: #3700ff; /* Muda cor de fundo */
+  }
+   
+
