@@ -1,0 +1,37 @@
+<table border="1" cellpadding="10" cellspacing="0">
+    <!-- Cabeçalho -->
+    <tr style="background-color: #ADD8E6;"> <!-- Aqui você escolhe a cor -->
+        <th style="text-align: right;">Código</th>
+        <th>Produto</th>
+        <th style="vertical-align: top;">Quantidade</th>
+        <th style="text-align: center;">Preço</th>
+    </tr>
+
+    <!-- Linha 2 -->
+    <tr>
+        <td rowspan="2" style="text-align: right;">001</td>
+        <td>Notebook Dell</td>
+        <td style="vertical-align: top;">5 unidades</td>
+        <td style="text-align: center;">R$ 3.599,00</td>
+    </tr>
+
+    <!-- Linha 3 -->
+    <tr>
+        <td>Mouse sem fio</td>
+        <td style="vertical-align: top;">10 unidades</td>
+        <td style="text-align: center;">R$ 129,90</td>
+    </tr>
+
+    <!-- Linha 4 -->
+    <tr>
+        <td style="text-align: right;">002</td>
+        <td>Teclado mecânico</td>
+        <td style="vertical-align: top;">8 unidades</td>
+        <td style="text-align: center;">R$ 349,90</td>
+    </tr>
+
+    <!-- Linha 5 (última linha) -->
+    <tr>
+        <td colspan="4" style="text-align: center;">Promoção de verão - 15% de desconto</td>
+    </tr>
+</table>
