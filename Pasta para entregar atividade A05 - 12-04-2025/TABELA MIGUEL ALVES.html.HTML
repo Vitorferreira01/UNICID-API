@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabela de Produtos</title>
+  <style>
+    th {
+      background-color: #00fbff;
+    }
+    .codigo {
+      text-align: right;
+    }
+    .preco {
+      text-align: center;
+    }
+    .quantidade {
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+
+  <table border="1" cellspacing="2" cellpadding="8" width="70%" height="70" align="center">
+    <tr>
+      <th class="codigo">Código</th>
+      <th>Produto</th>
+      <th class="quantidade">Quantidade</th>
+      <th class="preço">Preço</th>
+    </tr>
+    <tr>
+      <td rowspan="2" class="codigo">001</td>
+      <td>Notebook Dell</td>
+      <td class="quantidade">5 unidades</td>
+      <td class="preço">R$ 3.599,00</td>
+    </tr>
+    <tr>
+      <td>Mouse sem fio</td>
+      <td class="quantidade">10 unidades</td>
+      <td class="preço">R$ 129,90</td>
+    </tr>
+    <tr>
+      <td class="codigo">002</td>
+      <td>Teclado mecânico</td>
+      <td class="quantidade">8 unidades</td>
+      <td class="preço">R$ 349,90</td>
+    </tr>
+    <tr>
+      <td colspan="4" align="center">Promoção de verão: 15% de desconto</td>
+    </tr>
+  </table>
+
+</body>
+</html>
