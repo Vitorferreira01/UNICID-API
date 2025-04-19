@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title st>Tabela de Produtos</title>
+  <style>
+    /* Estiliza a tabela */
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+
+    /* Estiliza as células da tabela */
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+    }
+
+    /* Cor de fundo para os títulos da tabela */
+    th {
+      background-color: #d3d3f7; 
+    }
+
+    /* Alinha à direita a coluna de código */
+    .codigo {
+      text-align: right;
+    }
+
+    /* Centraliza os preços */
+    .preco {
+      text-align: center;
+    }
+
+    /* Alinha no topo a quantidade */
+    .quantidade {
+      vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1 style="text-align: center;">Tabela dos Preços</h1>
+
+    <!-- Início da tabela -->
+    <table>
+      <!-- Cabeçalho da tabela -->
+      <tr>
+        <th class="codigo">Código</th>
+        <th>Produto</th>
+        <th class="quantidade">Quantidade</th>
+        <th class="preco">Preço</th>
+      </tr>
+
+      <!-- Primeira linha com rowspan (mesmo código para dois produtos) -->
+      <tr>
+        <td rowspan="2" class="codigo">001</td>
+        <td>Notebook Dell</td>
+        <td class="quantidade">5 unidades</td>
+        <td class="preco">R$ 3.599,00</td>
+      </tr>
+
+      <!-- Segunda linha para o mesmo código 001 -->
+      <tr>
+        <td>Mouse sem fio</td>
+        <td class="quantidade">10 unidades</td>
+        <td class="preco">R$ 129,90</td>
+      </tr>
+
+      <!-- Terceira linha com código 002 -->
+      <tr>
+        <td class="codigo">002</td>
+        <td>Teclado mecânico</td>
+        <td class="quantidade">8 unidades</td>
+        <td class="preco">R$ 349,90</td>
+      </tr>
+
+      <!-- Linha de promoção -->
+      <tr>
+        <td colspan="3">Promoção de verão - 15% de desconto</td>
+        <td class="preco">15% de desconto</td>
+      </tr>
+    </table>
+</body>
+</html>
