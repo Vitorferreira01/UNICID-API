@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Leonardo</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #8124be; /* Cor do cabeçalho */
+        }
+
+        .codigo {
+            text-align: right;
+        }
+
+        .preco {
+            text-align: center;
+        }
+
+        .quantidade {
+            vertical-align: top;
+        }
+
+        .promocao {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th class="codigo">Código</th>
+            <th>Produto</th>
+            <th class="quantidade">Quantidade</th>
+            <th class="preco">Preço</th>
+        </tr>
+        <tr>
+            <td rowspan="2" class="codigo">001</td>
+            <td>Notebook Dell</td>
+            <td class="quantidade">5 unidades</td>
+            <td class="preco">R$ 3.599,00</td>
+        </tr>
+        <tr>
+            <td>Mouse sem fio</td>
+            <td class="quantidade">10 unidades</td>
+            <td class="preco">R$ 129,90</td>
+        </tr>
+        <tr>
+            <td class="codigo">002</td>
+            <td>Teclado mecânico</td>
+            <td class="quantidade">8 unidades</td>
+            <td class="preco">R$ 349,90</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="promocao">Promoção de verão</td>
+            <td class="preco">15% de desconto</td>
+        </tr>
+    </table>
+</body>
+</html>
