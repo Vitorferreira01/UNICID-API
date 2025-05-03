@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade A07</title>
+</head>
+<body>
+    <form action="processa.php" method="post" enctype="multipart/form-data">
+        <h2>Formulário de Agendamento - Wonderland Park</h2>
+
+        Nome do responsável: 
+        <input type="text" name="nome" placeholder="Informe o nome completo" maxlength="50">
+        <br>
+
+        email de contato: 
+        <input type="email" name="email" required>
+        <br>
+
+        Data da visita: 
+        <input type="date" name="dataVisita" min="2025-01-01">
+        <br>
+
+        Número de pessoas: 
+        <input type="number" name="numPessoas" min="1" max="10">
+        <br>
+
+        Preferência de atrações: 
+        <select name="atracoes">
+            <option value="rodaGig">Roda Gigante</option>
+            <option value="montRussa">Montanha-Russa</option>
+            <option value="carroBate">Carrinho Bate-Bate</option>
+            <option value="carrossel">Carrossel</option>
+            <option value="barcoVik">Barco Viking</option>
+           </select>
+           <br><hr>
+
+           Por favor nos dê a sua opinião sobre nosso formulário! (opcional)
+           <br>
+           <textarea name="feedback" id="" rows="4" cols="40"></textarea>
+
+           <br>
+           <input type="checkbox" name="termosDeUso" required> Eu concordo com os termos de uso e serviço.
+
+           <br>
+           <input type="submit" value="Enviar">
+
+           <!--Quais foram os principais desafios ao criar o formulário?
+           O principal desafio foi entender como funciona a construção de um formulário na forma de
+           HTML, pois para mim era um assunto novo no aprendizado da linguagem em HTML.
+
+           Algum campo não funcionou como esperado? Como você resolveu?
+           Com os exemplos fornecidos pelo professor não tive nenhum problema em relação ao funcionamento
+           do código.
+
+           Como essa experiência pode ser útil em um projeto real de desenvolvimento web?
+           Em um projeto real, essa experiência pode servir para complementar e deixar o projeto mais
+           formalizado e dando a opção do cliente poder interagir com a empresa fazendo o seu cadastro, marcando
+           visita e etc. -->
+
+
+
+
+
+    </form>
+</body>
+</html>
