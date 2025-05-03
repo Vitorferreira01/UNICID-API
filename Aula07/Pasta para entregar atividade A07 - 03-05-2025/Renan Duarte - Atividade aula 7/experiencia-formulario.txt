@@ -1,0 +1,8 @@
+Quais foram os principais desafios ao criar o formulário?
+Nenhum desafio significativo foi encontrado, pois eu já possuo conhecimento prévio na criação de formulários. O processo foi extremamente fácil e direto.
+
+Algum campo não funcionou como esperado? Como você resolveu?
+Todos os campos funcionaram conforme o esperado. Não houve necessidade de ajustes ou correções.
+
+Como essa experiência pode ser útil em um projeto real de desenvolvimento web?
+Mesmo sendo uma tarefa simples, reforçar a prática na criação de formulários é importante, já que formulários são amplamente usados em aplicações reais para coleta de dados, autenticação de usuários, cadastros e outras funcionalidades essenciais.

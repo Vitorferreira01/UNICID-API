@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonderland Park</title>
+</head>
+<body>
+  <h1>Agendamento para Wonderland Park</h1>
+  <form action="validacao.php" method="post" enctype="multipart/form-data">
+    
+    <label for="nome"><b>Nome:</b></label>
+    <input type="text" id="nome" name="nome" required>
+    <br>
+
+    <label for="email"><b>E-mail:</b></label>
+    <input type="email" id="email" name="email" required>
+    <br>
+
+    <label for="data_visita"><b>Data da visita:</b></label>
+    <input type="date" id="data_visita" name="data_visita" required>
+    <br>
+
+    <label for="numero_pessoas"><b>Número de Pessoas:</b></label>
+    <input type="number" id="numero_pessoas" name="numero_pessoas" min="1" max="10" required>
+    <br>
+
+    <label for="selecao"><b>Preferência de atração:</b></label>
+    <select name="selecao" id="selecao" required>
+      <option value="Montanharussa">Montanha Russa</option>
+      <option value="rodagigante">Roda Gigante</option>
+      <option value="showaquatico">Show Aquático</option>
+    </select>
+    <br>
+
+    <label for="cracha"><b>Cor do Cracha</b></label>
+    <input type="color" id="cracha" name="cracha" value="#00000">
+    <br>
+    
+    <h3>Feedback</h3>
+    <textarea name="feedback" id="feedback" placeholder="Insira o texto" rows="3" cols="80"></textarea>
+    <br>
+    
+    <h3>Você concorda com os termos?</h3>
+    <select name="aceite" required>
+      <option value="s">Sim</option>
+      <option value="n">Não</option>
+    </select>
+    <br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
