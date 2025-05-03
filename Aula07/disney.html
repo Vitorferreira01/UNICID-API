@@ -1,0 +1,120 @@
+<html> 
+	<head>
+		<title>Agendamento Disney World</title>
+	</head>
+	<body>
+		<h1>Agendamento de Atividade-Disney World</h1>
+		<form 	action="agendaDisney.php" 
+				method="post"
+				enctype="multipart/form-data"
+		>
+		<!-- enctype habilita anexos  -->
+			RESORT: 
+			<input 	name="resort" 
+					type="text" 
+					value="Disney World Orlando"
+					readonly
+			> <br>
+			Senha:	<input  type="password" 
+					name="senha"
+					maxlength="10"> <br>
+			
+			<!-- maxlenght define o número máximo
+					de caracteres
+				-->
+			Preenchimento: 1/5 
+			<progress max="5" value="1" step="2"></progress>
+			<hr>	
+			Nome do responsável:
+			<input 	type="text"
+					name="responsavel"
+					maxlength="80"
+					size="80"
+					placeholder="Informe nome completo">
+			<br>	
+			
+			N&ordm; de familiares (incluindo crianças):
+			<input 	type="number" 
+					name="familiares"
+					min="1"
+					max="99" > <br/>	
+			<fieldset>
+				<legend>Sexo</legend>
+				
+				<input 	type="radio" 
+						name="sexo"
+						value="M"> Masculino
+				
+				<input 	type="radio" 
+						name="sexo"
+						checked
+						value="F"> Feminino
+			</fieldset>
+			
+				
+				e-mail:
+			<input 	type="email"
+					name="email"
+					maxlength="100"
+					size="100"
+					required>
+			<br>
+			<input 	type="checkbox"
+					name="recEmails"
+					value="s"
+					checked> Quero receber e-mails<br>
+			<hr>
+			
+			<h3>Acesso ao Parque</h3>
+				
+				Data da visita:
+				<input 	type="date"
+						name="dataVisita"
+						min="2019-01-01"
+						max="2023-12-31"
+						required>
+				- Hora da Entrada:
+				<input	type="time"
+						name="horaVisita"
+						min="08:00:00"> <br>
+						
+				Cor da Pulseira:
+				<input 	type="color"
+						name="corPulseira"
+						value="#7F00FF"> <br>
+						
+				Número de atrações a visitar: 
+				 <input	type="range"
+						name="atracoes"
+						min="1"
+						max="10"> 10 <br>
+						
+				Foto da Família:
+				<input	type="file"
+						name="foto"> <br>
+						<!-- ao usar file, deve-se adicionar
+								a propriedade enctype no form-->
+				<h3>Preferências de Comida</h3>
+				<textarea	name="comida"
+					placeholder="Insira suas preferências aqui"
+							rows="3"
+							cols="80">
+							
+				</textarea>
+				<hr>
+				
+			<h3>Você concorda com os termos?</h3>
+			<select name="aceite">
+				<option value="s">Sim</option>
+				<option value="n">Não</option>
+			</select><br/>
+			
+			
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
+</html>
+
+
+<!-- enctype habilita anexos enctype="multipart/form-data" -->
+
