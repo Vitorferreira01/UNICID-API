@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MagicWeb Solutions</title>
+</head>
+<body>
+    <h1>MagicWeb Soluctions</h1>
+    <h2>Cadastro</h2>
+    <form action="agendaWonderlandPark.php"
+    method="post"
+    enctype="multipart/form-data"
+    >
+    Nome completo:
+    <input
+        name="nome"
+        type="text"
+        maxlength="40"
+        required
+    ><br>
+    E-mail:
+    <input
+        name="email"
+        type="email"
+        maxlength="100"
+        size="100"
+        required
+    ><br>
+    <input
+        type="checkbox"
+        name="recEmails"
+        value="s"
+        checked
+    >deseja receber e-mails? <br>
+    <hr>
+    Data de nascimento:
+    <input
+        name="datanascimento"
+        type="date"
+        max="03-05-2025"
+        required
+    ><br>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input
+            name="sexo"
+            type="radio"
+            value="M"
+        > Masculino
+        <input
+            name="sexo"
+            type="radio"
+            checked
+            value="F"
+        > Feminino
+    </fieldset>
+    <hr>
+    Data da visita:
+    <input
+        name="dataVisita"
+        type="date"
+        min="03-05-2025"
+        max="03-05-2027"
+        required
+    ><br>
+    Numero de pessoas:
+    <input
+        name="numeropessoas"
+        type="number"
+        min="1"
+        max="10"
+        required
+    >
+    <fieldset>
+        <legend>Preferência de atração</legend>
+        <input
+            name="atracao[]"
+            type="checkbox"> Montanha-russa
+        <input
+            name="atracao[]"
+            type="checkbox"> Roda Gigante
+        <input
+            name="atracao[]"
+            type="checkbox"> Show Aquático
+    </fieldset>
+
+    <hr>
+    <h3>Você concorda com os termos?</h3>
+    <select name="aceite" required>
+        <option value="s">Sim</option>
+        <option value="n">Não</option>
+    </select><p></p>
+    <input type="submit" value="Enviar">
+
+    </form>
+    
+    
+</body>
+</html>
