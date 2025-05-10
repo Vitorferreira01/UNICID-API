@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento - Wonderland Park</title>
+</head>
+<body>
+  <h1>Formulário de Agendamento - Wonderland Park</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Informações do Visitante</legend>
+
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required><br><br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="data">Data da visita:</label>
+      <input type="date" id="data" name="data" required><br><br>
+
+      <label for="pessoas">Número de pessoas:</label>
+      <input type="number" id="pessoas" name="pessoas" min="1" max="10" required><br><br>
+
+      <label for="atracao">Preferência de atração:</label>
+      <select id="atracao" name="atracao" required>
+        <option value="">Selecione</option>
+        <option value="montanha">Montanha-russa</option>
+        <option value="roda">Roda Gigante</option>
+        <option value="show">Show Aquático</option>
+      </select><br><br>
+
+      <label>
+        <input type="checkbox" name="termos" required>
+        Aceito os termos de visita
+      </label><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações Opcionais</legend>
+
+      <label for="cor">Cor do crachá:</label>
+      <input type="color" id="cor" name="cor"><br><br>
+
+      <label for="feedback">Feedback:</label><br>
+      <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Digite seu feedback aqui..."></textarea><br><br>
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
+<!-- 
+Relatório de Validação:
+
+1. Quais foram os principais desafios ao criar o formulário?
+O principal desafio foi garantir que todos os tipos de campo fossem utilizados corretamente, especialmente aqueles menos comuns como 'color' e o uso do 'required' de forma funcional. Também foi importante validar os valores numéricos corretamente.
+
+2. Algum campo não funcionou como esperado? Como você resolveu?
+Sim. O campo 'number' inicialmente aceitava valores negativos porque não havia sido definido o atributo 'min'. Isso foi corrigido com min="1" e max="10". Além disso, o campo 'select' foi ajustado para ter uma opção inicial vazia que obriga o usuário a escolher uma opção válida.
+
+3. Como essa experiência pode ser útil em um projeto real de desenvolvimento web?
+Essa atividade ajuda a entender a importância da validação no lado do cliente, melhorando a usabilidade e a segurança do formulário. Também permite aprender o uso correto dos atributos HTML5, o que é essencial em qualquer aplicação web.
+-->
