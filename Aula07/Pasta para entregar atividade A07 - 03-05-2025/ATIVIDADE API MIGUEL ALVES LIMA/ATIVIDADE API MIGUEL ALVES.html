@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento - Parque Encantado</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2024/02/04/06/46/roller-coaster-8551651_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    label {
+      margin-top: 15px;
+      display: block;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .checkbox {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+    }
+
+    .checkbox input {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #f1c40f;
+      color: #2c3e50;
+      font-weight: bold;
+      border: none;
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f39c12;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="confirmacao.html" method="post">
+      <h2>Agende sua Visita - Parque Encantado</h2>
+
+      <label for="nome">Nome completo *</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail para contato *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="dataVisita">Data desejada da visita *</label>
+      <input type="date" id="dataVisita" name="dataVisita" min="2025-01-01" required>
+
+      <label for="numPessoas">Quantidade de visitantes *</label>
+      <input type="number" id="numPessoas" name="numPessoas" min="1" max="10" required>
+
+      <label for="atracoes">Atração preferida *</label>
+      <select name="atracoes" id="atracoes" required>
+        <option value="">Selecione uma opção</option>
+        <option value="montanhaRussa">Montanha-russa</option>
+        <option value="rodaGigante">Roda Gigante</option>
+        <option value="showAquatico">Show Aquático</option>
+      </select>
+
+      <div class="checkbox">
+        <input type="checkbox" id="termos" name="termosDeUso" required>
+        <label for="termos">Li e aceito os termos de uso *</label>
+      </div>
+
+      <input type="submit" value="Confirmar Agendamento">
+    </form>
+  </div>
+</body>
+</html>
