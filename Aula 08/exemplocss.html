@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Exemplo CSS</title>
+		<meta charset="UTF-8"/>
+		<style>
+			body{
+					background-color:#fcf3d9;
+				}
+				
+			p{
+				color:#fc1303;
+				text-align:center;
+				font-family: calibri, arial;
+				margin:10px auto;
+				/*margin-top: 10px;
+				margin-right: 10px;*/
+				width:200px;
+			}
+			p:hover{
+				background-color:#de999b;
+			}
+			.textocc{
+				color:#0008ff; 					/* cor da fonte */
+				text-align:left; 				/* alinhamento */
+				font-family: Comic sans MS, calibri, arial; /* tipo da fonte */
+				border: 1px double #f203ff; 	/* largura, tipo, cor */
+				border-radius: 3px; 			/* borda arredondada */
+				padding: 10px;
+				
+			}
+			/*
+				 A borda pode ser solid, dashed, dotted, double
+				 entre outros
+			*/
+			
+			#p4{
+				font-size:15px;
+				color: #00ff22;
+				border: none;
+			}
+			
+			a:visited{
+				color: orange;
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+		Testando o CSS
+		<p>
+			Parágrafo 01
+		</p>
+		<p class="textocc">
+			Parágrafo 02
+			 <a href="https://google.com.br/" target="_blank">
+				Google
+			 </a>
+		</p>
+		<p class="textocc">
+			Parágrafo 03
+		</p>
+		<p class="textocc" id="p4">
+			Parágrafo 04
+		</p>
+		<p class="textocc" style="color:orange; text-align:right;">
+			Parágrafo 05
+		</p>
+		<!-- Propriedade style dentro da tag
+		é um CSS INLINE -->
+	</body>
+</html>
