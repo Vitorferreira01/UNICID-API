@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento - Parque Encantado</title>
+</head>
+<body>
+  <h1>Formulário de Agendamento - Parque Encantado</h1>
+  <form action="confirmacao.html" method="POST">
+    
+    <!-- Nome completo -->
+    <label for="nome">Nome completo: *</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+    
+    <!-- E-mail -->
+    <label for="email">E-mail: *</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Data da visita -->
+    <label for="data">Data da visita: *</label><br>
+    <input type="date" id="data" name="data" required><br><br>
+    
+    <!-- Número de pessoas -->
+    <label for="pessoas">Número de pessoas (1 a 10): *</label><br>
+    <input type="number" id="pessoas" name="pessoas" min="1" max="10" required><br><br>
+    
+    <!-- Preferência de atração -->
+    <label for="atracao">Preferência de atração: *</label><br>
+    <select id="atracao" name="atracao" required>
+      <option value="">Selecione...</option>
+      <option value="montanha-russa">Montanha-russa</option>
+      <option value="roda-gigante">Roda Gigante</option>
+      <option value="show-aquatico">Show Aquático</option>
+    </select><br><br>
+    
+    <!-- Termos de aceite -->
+    <input type="checkbox" id="aceite" name="aceite" required>
+    <label for="aceite">Li e aceito os termos de uso *</label><br><br>
+    
+    <!-- Campo opcional: Cor do crachá -->
+    <label for="cor">Cor do crachá:</label><br>
+    <input type="color" id="cor" name="cor"><br><br>
+    
+    <!-- Campo opcional: Feedback -->
+    <label for="feedback">Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="Deixe seu comentário..."></textarea><br><br>
+    
+    <!-- Botão de envio -->
+    <button type="submit">Enviar</button>
+
+  </form>
+</body>
+</html>
+
+<!-- 
+  RELATÓRIO DE VALIDAÇÃO
+
+  1. Quais foram os principais desafios ao criar o formulário?
+     R: O principal desafio foi garantir que todos os campos tivessem as validações corretas, especialmente o campo de número com limites e a obrigatoriedade do checkbox.
+
+  2. Algum campo não funcionou como esperado? Como você resolveu?
+     R: Inicialmente o campo <select> permitia envio sem seleção válida. Resolvi isso adicionando um <option value=""> como valor padrão e o atributo "required".
+
+  3. Como essa experiência pode ser útil em um projeto real de desenvolvimento web?
+     R: Essa experiência ensina como lidar com validações no lado do cliente e melhora a atenção aos detalhes no front-end. Também mostra a importância da acessibilidade e usabilidade dos formulários.
+-->
