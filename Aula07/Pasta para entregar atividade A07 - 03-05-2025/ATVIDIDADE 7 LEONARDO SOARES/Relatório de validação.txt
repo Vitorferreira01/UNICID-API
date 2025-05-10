@@ -1,0 +1,14 @@
+
+-Quais foram os principais desafios ao criar o formulário?
+
+Os principais desafios foram usar tags e achar soluções para funções que ainda não tinha experiência, como botões, campos de texto, etc
+
+-Algum campo não funcionou como esperado? Como você resolveu?
+
+O campo da cor do crachá foi o que mais deu erro, mas consegui resolver pesquisando soluções online.
+
+-Como essa experiência pode ser útil em um projeto real de desenvolvimento web
+
+O formulário tem muitas funcionalidades que podem ser adicionadas em todo tipo de projeto, como cadastro em algum site, login, pesquisa, etc
+
+
