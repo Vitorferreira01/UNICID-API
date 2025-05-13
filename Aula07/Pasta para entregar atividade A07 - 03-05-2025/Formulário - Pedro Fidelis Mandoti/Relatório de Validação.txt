@@ -1,0 +1,12 @@
+
+-Quais foram os principais desafios ao criar o formulário?
+
+Os principais desafios foi  a ultilização de algumas tags e a inserção das funções (caixa de opção), já que são diversas tags.
+
+-Algum campo não funcionou como esperado? Como você resolveu?
+
+O campo da cor foi um poquinho mais complexo, mas nada que uma boa pesquisada não resolvesse
+
+-Como essa experiência pode ser útil em um projeto real de desenvolvimento web
+
+O código te introduz a raiz do desenvolvimento web, fazendo assim com que você fique imerso na "web coding"
