@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cartão de Perfil</title>
+  <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #bbc6e9;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      max-width: 300px;
+      transition: box-shadow 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+    }
+
+    .job-title, .location {
+      color: #666;
+      font-size: 14px;
+      margin: 2px 0;
+      text-align: justify;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #444;
+      margin: 10px 0 15px;
+      text-align: justify;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #4299e1;
+      transition: color 0.3s;
+    }
+
+    .links a:visited {
+      color: #2b6cb0;
+    }
+
+    .links a:hover {
+      color: #3182ce;
+    }
+
+    .links a:focus, .links a:active {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="c:\Users\GUILHERMEDESOUZAFIGU\Pictures\kermit.jpg" alt="Foto de Guilherme" class="profile-img">
+    <div class="name">Guilherme de Souza Figueiredo</div>
+    <div class="job-title">Cursando Análise e Desenvolvimento de Sistemas</div>
+    <div class="location">São Paulo, Brasil</div>
+    <div class="description">
+      Focando em obter novos conhecimentos.<br>
+      Iniciando na Área de Técnologia
+    </div>
+    <div class="links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Portfólio</a>
+      <!--Guilherme de Souza Figueiredo-->
+    </div>
+  </div>
+</body>
+</html>
