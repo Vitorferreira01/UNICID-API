@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cartão de Perfil Profissional</title>
+ <meta charset="UTF-8">
+ <style>
+ body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+ }
+ .cartao-perfil{
+    background-color: #ffffff;
+    width: 300px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto 0px;
+    text-align: center;
+ }
+ img{
+    border-radius: 50%;
+    width: 150px;
+    margin: 0 auto;
+ }
+ h1{
+    color:#2d3748;
+    text-align: center;
+    font-size: 24px;
+ }
+ h2{
+    color: #4a5568;
+    text-align: center;
+    font-size: 24px;
+ }
+ p{
+    color: #718096;
+    text-align: center;
+ }
+ p.bio{
+    color: #4a5568;
+    text-align: justify;
+    margin-top: 10px;
+ }
+ .contato a{
+    display: inline-block;
+    color: #4299e1;
+    text-decoration: none;
+    margin: 0 10px;
+ }
+ .contato a:visited{
+    color: #2b6cb0;
+ }
+ .contato a:hover{
+    color: #3182ce;
+ }
+ .cartao-perfil:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+ }
+ </style>
+</head>
+<body>
+ <div class="cartao-perfil">
+ <img src="imagem.jpg" alt="Foto de perfil">
+ <h1>Gabriel Correia</h1>
+ <h2>Desenvolvedor Front-End</h2>
+ <p>São Paulo, Brasil</p>
+ <p class="bio">Especialista em HTML, CSS e JavaScript. Apaixonado por criar interfaces responsivas e acessíveis.</p>
+ <div class="contato">
+ <a href="#">LinkedIn</a>
+ <a href="#">GitHub</a>
+ <a href="#">Portfólio</a>
+ </div>
+ </div>
+</body>
+</html>
