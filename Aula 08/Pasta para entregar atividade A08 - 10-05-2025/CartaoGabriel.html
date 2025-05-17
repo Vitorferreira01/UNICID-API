@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 15px;
+    }
+    .cartao {
+      width: 300px;
+      max-width: 100%; 
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+      margin: 0 auto; 
+      padding: 20px; 
+      text-align: center;
+      background-color: #ffffff;
+    }
+   
+    .cartao img {
+      width: 150px;
+      height: 150px; 
+      border-radius: 50%;
+      margin: 0 auto; 
+      object-fit: cover;
+    }
+
+    .cartao h1{ color: #2d3748; font-size: 24px; }
+    .cartao h2{ color: #4a5568; font-size: 17px; }
+    .cartao p{ color: #718096; }
+    #bio{ color: #4a5568; text-align: justify; margin: 10px; }
+    
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .links a {
+      color: #4a5568;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px; 
+    }
+
+    .links a:hover { transform: translateY(-2px); color: #2d3748; }
+    .links i { font-size: 1.4rem; }
+    .github:hover { color: #181717; }
+    .linkedin:hover { color: #0A66C2; }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão de Perfil Profissional</title>
+</head>
+<body>
+  <div class="cartao">
+    <img src="https://i.imgur.com/O4gCtqG.jpeg" alt="Perfil">
+    <h1>Gabriel luiz souza marques</h1>
+    <p>Desenvolvedor Full-Stack</p>
+    <p>São Paulo, Brasil</p>
+    <p id="bio">Expertise em PHP, JavaScript, HTML, CSS e Python. Soluções técnicas eficientes com foco em resultados.</p>
+    
+    <div class="links">
+        <a href="https://github.com/GabrielBorges1234" target="_blank" class="github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+            GitHub 
+        </a>
+        <a href="" target="_blank" class="" aria-label="">
+            <i class=""></i> 
+            LinkedIn 
+        </a>
+    </div>
+  </div>
+</body>
+</html>
