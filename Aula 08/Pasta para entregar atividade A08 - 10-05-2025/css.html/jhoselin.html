@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartão de Perfil - Bootstrap</title>
+  <style>
+    body {
+      background-color: rgb(227, 229, 233);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background-color: hsl(0, 0%, 99%);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 320px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: 600;
+      color: #2d3748;
+    }
+
+    .profile-role {
+      font-size: 18px;
+      color: #4a5568;
+    }
+
+    .profile-location {
+      font-size: 0.9rem;
+      color: #718096;
+      margin-bottom: 10px;
+    }
+
+    .profile-desc {
+      font-size: 20px;
+      color: #080101;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .profile-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #0d6efd;
+      transition: color 0.3s;
+    }
+
+    .profile-links a:hover {
+      color: #1964d4;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="profile-card">
+  <img src="https://cdn.pixabay.com/photo/2014/06/08/12/18/pink-364918_1280.jpg" alt="Foto de perfil">
+  <div class="profile-name">Jhoselin machaca condori </div>
+  <div class="profile-role"> cursando analise desenvolvimento</div>
+  <div class="profile-location">São Paulo, Brasil</div>
+  <p class="profile-desc">
+    Especialista em <strong>HTML, marketplace ecommerce , ediçao de fotos</strong>.<br>
+    experencia em ediçao de foto e marketing .
+  </p>
+  <div class="profile-links">
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+    <a href="#">Portfólio</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+
