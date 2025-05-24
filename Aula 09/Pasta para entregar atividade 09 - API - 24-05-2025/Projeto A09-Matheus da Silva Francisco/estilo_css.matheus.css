@@ -1,0 +1,37 @@
+/* Estilo para o título principal */
+h1 {
+    color: #009B82;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Parágrafos comuns */
+  p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Destaques */
+  .destaque {
+    background-color: #F0F8FF;
+    color: #0066CC;
+    border: 1px solid #009B82;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Rodapé estilizado */
+  footer {
+    background-color: #009B82;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Efeito de hover nos artigos (bônus) */
+  article:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+  }
+  
